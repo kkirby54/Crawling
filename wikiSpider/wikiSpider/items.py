@@ -5,8 +5,13 @@
 
 import scrapy
 
-
-class WikispiderItem(scrapy.Item):
+class Article(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    url = scrapy.Field()
+    title = scrapy.Field()
+    text = scrapy.Field()
+    lastUpdated = scrapy.Field()
+
+
+
