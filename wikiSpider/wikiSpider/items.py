@@ -13,5 +13,6 @@ class Article(scrapy.Item):
     text = scrapy.Field()
     lastUpdated = scrapy.Field()
 
-
-
+class News(scrapy.Item):
+    title = scrapy.Field()
+    company = scrapy.Field()
